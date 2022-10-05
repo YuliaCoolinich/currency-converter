@@ -1,0 +1,21 @@
+select {
+    padding: 10px;
+    font-size: calc(20px + 2vmin);
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    margin-right: 20px;
+}
+
+select option {
+    font-weight: normal;
+    color: rgb(22, 21, 21);
+}
+select:hover {
+    font-weight: normal;
+    color: rgb(110, 108, 108);
+    border-bottom: 1px solid rgb(110, 108, 108);
+}
