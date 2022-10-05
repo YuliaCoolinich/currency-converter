@@ -1,4 +1,5 @@
 import Header from './containers/Header';
+import Converter from './containers/Converter';
 
 import './App.css';
 
@@ -9,6 +10,7 @@ function App() {
         <Header />
       </header>
       <main className="App-main">
+        <Converter />
       </main>
     </div>
   );
