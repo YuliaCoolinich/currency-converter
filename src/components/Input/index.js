@@ -1,23 +1,21 @@
 import React from 'react';
 
 import './styles.css';
-const DEFAULT_PLACEHOLDER = 'Input value';
 
-function Input ({ value, onChange, placeholder=DEFAULT_PLACEHOLDER }) {
-    const handleInputChange = (e) => {
-        if (e.target.validity.valid) {
-            const newValue = e.target.value ?? "";
-            onChange(newValue);
-        }
+const DEFAULT_VALUE = 0;
+
+function Input ({ value, onChange}) {
+    const onFocusHandle = (e) => {
+        e.target.value = ' ';
     }
 
     return(
         <input 
             type='text'
             pattern='([0-9]*)+(\.{0,1})([0-9]*)'
-            placeholder={placeholder}
-            value={value}
-            onChange={handleInputChange}
+            value={Number(value) ? value : DEFAULT_VALUE}
+            onChange={onChange}
+            onFocus={onFocusHandle}
         />
     )
 
