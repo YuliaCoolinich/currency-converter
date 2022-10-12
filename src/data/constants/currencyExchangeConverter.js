@@ -1,0 +1,7 @@
+import CURRENCY from './currencyCodes';
+
+export const CURRENCY_CONVERTER = {
+    [CURRENCY.UAH]: CURRENCY.UAH,
+    [CURRENCY.USD]: CURRENCY.USD,
+    [CURRENCY.EUR]: CURRENCY.EUR,
+}
